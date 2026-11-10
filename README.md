@@ -120,15 +120,16 @@ Sin embargo, la IA omitió algunas limitaciones importantes. No se puede evaluar
 
 Mi validación demuestra que los porcentajes de participación calculados por la IA son correctos. El principal aporte de mi análisis fue comprobar cada porcentaje contra la facturación total, reconocer que no existe información suficiente para calcular variaciones mensuales y separar facturación de rentabilidad.
 
-## Uso de inteligencia artificial y revisión crítica
+## Tarea 3 — Documentación del README y cambios realizados
 
-La IA se utilizó como apoyo para organizar la documentación, explicar consultas y proponer interpretaciones de los resultados. Las respuestas se revisaron y ajustaron para que coincidieran con el código real y evitar afirmaciones no verificadas.
+Para adaptar la documentación generada inicialmente con IA al proyecto real, se realizaron los siguientes cambios:
 
-| Propuesta inicial de la IA | Cambio realizado | Motivo |
+| Versión de IA | Versión final | Justificación técnica o analítica |
 |---|---|---|
-| Describir una base de datos llamada `RetailPro`. | Se documentó el nombre real: `Ventas_Tech_DB`. | El nombre debe coincidir con la instrucción `CREATE DATABASE` del script. |
-| Incluir archivos de creación y carga con nombres que no estaban en el repositorio. | Se documentó el archivo existente: `SQLQuery1.sql`. | Evitar indicar rutas o archivos inexistentes. |
-| Explicar la ejecución como si todo el script pudiera ejecutarse sin consideraciones. | Se aclaró que `CREATE DATABASE` debe ejecutarse por separado y que el script elimina y recrea las tablas. | Prevenir errores de ejecución y pérdida accidental de datos. |
+| Se proponía documentar el proyecto utilizando el nombre **RetailPro** como si fuera el nombre de la base de datos. | Se aclaró que el proyecto se llama **RetailPro**, pero la base de datos creada por el script se llama **Ventas_Tech_DB**. | Se verificó el código SQL y la instrucción CREATE DATABASE Ventas_Tech_DB;. La documentación debe coincidir con el nombre real utilizado por SQL Server. |
+| La documentación inicial podía indicar archivos separados para crear tablas, cargar datos y realizar consultas. | Se documentó el archivo real del repositorio: **SQLQuery1.sql**, que contiene la creación de la base, tablas, datos y consultas SELECT. | Se comparó la documentación con la estructura real del repositorio para evitar instrucciones sobre archivos inexistentes y facilitar la reproducción del proyecto. |
+| La explicación de ejecución podía presentar el script como si pudiera ejecutarse completo sin consideraciones. | Se indicó que **CREATE DATABASE** debe ejecutarse de forma independiente y que luego debe ejecutarse el resto del script sobre Ventas_Tech_DB. También se aclaró que las tablas existentes se eliminan y recrean. | Es una precisión técnica de SQL Server y una medida para evitar errores de ejecución o pérdida de datos existentes. |
+
 
 ## Tarea 4 — Reflexión
 
