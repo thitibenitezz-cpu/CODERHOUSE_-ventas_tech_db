@@ -46,23 +46,23 @@ El script incluido prepara la base de datos y carga un conjunto pequeño de dato
 
 > Actúa como un Analista de Datos Senior. A continuación te paso los resultados tabulados de dos consultas SQL sobre las ventas de RetailPro: Consulta 1 (Resumen ejecutivo mensual) y Consulta 2 (Ranking de productos). Identifica los 3 hallazgos comerciales más importantes, calculando variaciones porcentuales y participación sobre el total.
 
-### 2. Datos y resultados completos de las consultas
+### 2. Los datos y resultados completos de tus dos consultas
 
 **Tabla 1 — Resumen ejecutivo mensual**
 
-| Mes | Facturación total | Total de pedidos | Ticket promedio |
+| Mes | Total de Ventas | Cantidad de Órdenes | Ticket Promedio |
 |---|---:|---:|---:|
 | Marzo 2024 | $6.444,00 | 10 | $644,40 |
 
 **Tabla 2 — Ranking de productos**
 
-| Producto | Categoría | Unidades vendidas | Monto total facturado |
-|---|---|---:|---:|
-| Laptop Pro 15 | Computación | 3 | $3.600,00 |
-| Monitor 4K 27\" | Computación | 3 | $1.350,00 |
-| SSD Externo 1TB | Almacenamiento | 3 | $390,00 |
-| Teclado Mecánico | Accesorios | 4 | $380,00 |
-| Mouse Inalámbrico | Accesorios | 13 | $364,00 |
+| Producto / Categoría | Unidades Vendidas | Monto Total Facturado |
+|---|---:|---:|
+| Laptop Pro 15 / Computación | 3 | $3.600,00 |
+| Monitor 4K 27" / Computación | 3 | $1.350,00 |
+| SSD Externo 1TB / Almacenamiento | 3 | $390,00 |
+| Teclado Mecánico / Accesorios | 4 | $380,00 |
+| Mouse Inalámbrico / Accesorios | 13 | $364,00 |
 
 ### 3. Respuesta generada por la IA
 
