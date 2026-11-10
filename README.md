@@ -64,21 +64,61 @@ El script incluido prepara la base de datos y carga un conjunto pequeño de dato
 | Teclado Mecánico / Accesorios | 4 | $380,00 |
 | Mouse Inalámbrico / Accesorios | 13 | $364,00 |
 
-### 3. Respuesta generada por la IA
+### 3. La respuesta generada por la IA
 
-**Hallazgo 1 — Alta concentración de la facturación en productos de mayor valor.** La Laptop Pro 15 genera $3.600, equivalente al 55,87% de la facturación mensual. Si se suma el Monitor 4K 27\", ambos productos representan el 76,82% de la facturación. Esto muestra una fuerte dependencia de pocos productos de alto valor.
+Los tres hallazgos generados a partir de las tablas fueron:
 
-**Hallazgo 2 — Concentración relevante en clientes recurrentes.** El cliente 1 realizó 2 compras y generó $2.640, aproximadamente el 40,97% de la facturación total del mes. Esto indica que los clientes recurrentes pueden tener un peso importante en los ingresos y que conviene trabajar acciones de fidelización.
+- **Alta concentración de la facturación en productos de mayor valor.** La Laptop Pro 15 genera $3.600, equivalente al 55,87% de la facturación mensual. Si se suma el Monitor 4K 27", ambos productos representan el 76,82% de la facturación. Esto muestra una fuerte dependencia de pocos productos de alto valor.
 
-**Hallazgo 3 — El volumen de unidades no coincide necesariamente con la facturación.** El Mouse Inalámbrico es el producto con más unidades vendidas, con 13 unidades, pero genera solo $364, equivalente al 5,65% de la facturación. Por lo tanto, vender más unidades no implica necesariamente generar más ingresos.
+- **Concentración relevante en clientes recurrentes.** El cliente 1 realizó 2 compras y generó $2.640, aproximadamente el 40,97% de la facturación total del mes. Esto indica que los clientes recurrentes pueden tener un peso importante en los ingresos y que conviene trabajar acciones de fidelización.
 
-### 4. Evaluación crítica y decisiones propias
+- **El volumen de unidades no coincide necesariamente con la facturación.** El Mouse Inalámbrico es el producto con más unidades vendidas, con 13 unidades, pero genera solo $364, equivalente al 5,65% de la facturación. Por lo tanto, vender más unidades no implica necesariamente generar más ingresos.
 
-Los tres hallazgos son consistentes con los datos y son útiles para el negocio, pero la respuesta de la IA tiene limitaciones que deben considerarse. En primer lugar, **no permite hablar de rentabilidad**, porque la base contiene precios de venta pero no costos, márgenes ni gastos. En segundo lugar, **no permite analizar una evolución temporal real**, ya que el conjunto de datos contiene ventas únicamente de marzo de 2024. En tercer lugar, la concentración de facturación en pocos productos es un riesgo comercial, pero también puede representar una oportunidad para mantener stock y desarrollar estrategias de venta cruzada.
+### 4. Evaluación crítica y validación explícita de porcentajes
 
-Además, el cálculo de `ticket_promedio` de la consulta original corresponde al promedio del importe de cada registro de venta, no necesariamente al promedio por pedido si un pedido pudiera contener varias líneas. Por eso, la cifra de $644,40 debe interpretarse con esa precisión.
+**1. Validación de variaciones mes a mes**
 
-Mi conclusión es que la IA fue útil para detectar patrones rápidamente, pero la interpretación final requirió validar los cálculos, distinguir facturación de rentabilidad y reconocer qué conclusiones no podían obtenerse con los datos disponibles.
+La IA no afirmó una variación porcentual entre meses. La tabla base contiene únicamente **marzo de 2024**, por lo que no es posible calcular una variación mes a mes.
+
+No corresponde hacer una cuenta como (Ventas Junio - Ventas Mayo) / Ventas Mayo × 100 porque no existen datos de mayo ni junio en el conjunto analizado. Por lo tanto, no hay una alucinación matemática en este punto, pero sí debe aclararse que **no existe información suficiente para analizar evolución temporal**.
+
+**2. Validación de participación por producto**
+
+Para la Laptop Pro 15:
+
+$3.600 / $6.444 × 100 = **55,87%**
+
+La cifra indicada por la IA es correcta.
+
+Para el Monitor 4K 27":
+
+$1.350 / $6.444 × 100 = **20,95%**
+
+Por lo tanto, ambos productos juntos representan:
+
+($3.600 + $1.350) / $6.444 × 100 = **76,82%**
+
+La cifra del 76,82% también es correcta.
+
+Para el Mouse Inalámbrico:
+
+$364 / $6.444 × 100 = **5,65%**
+
+La cifra del 5,65% es correcta.
+
+También se puede validar el hallazgo sobre el cliente 1 con los datos de ventas:
+
+$2.640 / $6.444 × 100 = **40,97%**
+
+Por lo tanto, el porcentaje indicado por la IA coincide con la tabla base.
+
+**3. Accionabilidad y omisiones**
+
+Los hallazgos son accionables para el equipo comercial de RetailPro. La concentración de facturación en la Laptop Pro 15 y el Monitor 4K 27" permite priorizar el control de stock, promociones y estrategias de venta cruzada. Por otro lado, el Mouse Inalámbrico demuestra que un producto puede tener mucho volumen de unidades y una participación relativamente baja en la facturación, por lo que conviene diferenciar las estrategias según volumen y valor.
+
+Sin embargo, la IA omitió algunas limitaciones importantes. No se puede evaluar **rentabilidad**, porque la base no contiene costos ni márgenes. Tampoco se puede analizar una **tendencia de ventas**, porque solo hay datos de marzo de 2024. Además, con este conjunto reducido de datos no sería conveniente generalizar estos comportamientos como tendencias permanentes del negocio.
+
+Mi validación demuestra que los porcentajes de participación calculados por la IA son correctos. El principal aporte de mi análisis fue comprobar cada porcentaje contra la facturación total, reconocer que no existe información suficiente para calcular variaciones mensuales y separar facturación de rentabilidad.
 
 ## Uso de inteligencia artificial y revisión crítica
 
