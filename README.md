@@ -39,6 +39,47 @@ Las tablas están relacionadas mediante claves primarias y claves foráneas. La 
 
 El script incluido prepara la base de datos y carga un conjunto pequeño de datos ficticios de marzo de 2024. La estructura permite practicar consultas sobre ventas, clientes, productos y categorías. Los análisis agregados o reportes adicionales deben incorporarse como consultas SQL complementarias.
 
+
+## Tarea 2 — Generación de insights
+
+### 1. Prompt exacto utilizado
+
+> Actuá como un Analista de Datos Senior. A continuación paso los resultados tabulados de dos consultas SQL sobre las ventas de RetailPro: Consulta 1 (Resumen ejecutivo mensual) y Consulta 2 (Ranking de productos). Identificá los 3 hallazgos comerciales más importantes, calculando variaciones porcentuales y participación sobre el total cuando corresponda. No inventes datos que no estén presentes y señalá cualquier limitación del conjunto de datos.
+
+### 2. Datos y resultados completos de las consultas
+
+**Tabla 1 — Resumen ejecutivo mensual**
+
+| Mes | Facturación total | Total de pedidos | Ticket promedio |
+|---|---:|---:|---:|
+| Marzo 2024 | $6.444,00 | 10 | $644,40 |
+
+**Tabla 2 — Ranking de productos**
+
+| Producto | Categoría | Unidades vendidas | Monto total facturado |
+|---|---|---:|---:|
+| Laptop Pro 15 | Computación | 3 | $3.600,00 |
+| Monitor 4K 27\" | Computación | 3 | $1.350,00 |
+| SSD Externo 1TB | Almacenamiento | 3 | $390,00 |
+| Teclado Mecánico | Accesorios | 4 | $380,00 |
+| Mouse Inalámbrico | Accesorios | 13 | $364,00 |
+
+### 3. Respuesta generada por la IA
+
+**Hallazgo 1 — Alta concentración de la facturación en productos de mayor valor.** La Laptop Pro 15 genera $3.600, equivalente al 55,87% de la facturación mensual. Si se suma el Monitor 4K 27\", ambos productos representan el 76,82% de la facturación. Esto muestra una fuerte dependencia de pocos productos de alto valor.
+
+**Hallazgo 2 — Concentración relevante en clientes recurrentes.** El cliente 1 realizó 2 compras y generó $2.640, aproximadamente el 40,97% de la facturación total del mes. Esto indica que los clientes recurrentes pueden tener un peso importante en los ingresos y que conviene trabajar acciones de fidelización.
+
+**Hallazgo 3 — El volumen de unidades no coincide necesariamente con la facturación.** El Mouse Inalámbrico es el producto con más unidades vendidas, con 13 unidades, pero genera solo $364, equivalente al 5,65% de la facturación. Por lo tanto, vender más unidades no implica necesariamente generar más ingresos.
+
+### 4. Evaluación crítica y decisiones propias
+
+Los tres hallazgos son consistentes con los datos y son útiles para el negocio, pero la respuesta de la IA tiene limitaciones que deben considerarse. En primer lugar, **no permite hablar de rentabilidad**, porque la base contiene precios de venta pero no costos, márgenes ni gastos. En segundo lugar, **no permite analizar una evolución temporal real**, ya que el conjunto de datos contiene ventas únicamente de marzo de 2024. En tercer lugar, la concentración de facturación en pocos productos es un riesgo comercial, pero también puede representar una oportunidad para mantener stock y desarrollar estrategias de venta cruzada.
+
+Además, el cálculo de `ticket_promedio` de la consulta original corresponde al promedio del importe de cada registro de venta, no necesariamente al promedio por pedido si un pedido pudiera contener varias líneas. Por eso, la cifra de $644,40 debe interpretarse con esa precisión.
+
+Mi conclusión es que la IA fue útil para detectar patrones rápidamente, pero la interpretación final requirió validar los cálculos, distinguir facturación de rentabilidad y reconocer qué conclusiones no podían obtenerse con los datos disponibles.
+
 ## Uso de inteligencia artificial y revisión crítica
 
 La IA se utilizó como apoyo para organizar la documentación, explicar consultas y proponer interpretaciones de los resultados. Las respuestas se revisaron y ajustaron para que coincidieran con el código real y evitar afirmaciones no verificadas.
