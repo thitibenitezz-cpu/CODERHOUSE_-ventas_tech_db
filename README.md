@@ -44,7 +44,7 @@ El script incluido prepara la base de datos y carga un conjunto pequeño de dato
 
 ### 1. Prompt exacto utilizado
 
-> Actuá como un Analista de Datos Senior. A continuación paso los resultados tabulados de dos consultas SQL sobre las ventas de RetailPro: Consulta 1 (Resumen ejecutivo mensual) y Consulta 2 (Ranking de productos). Identificá los 3 hallazgos comerciales más importantes, calculando variaciones porcentuales y participación sobre el total cuando corresponda. No inventes datos que no estén presentes y señalá cualquier limitación del conjunto de datos.
+> Actúa como un Analista de Datos Senior. A continuación te paso los resultados tabulados de dos consultas SQL sobre las ventas de RetailPro: Consulta 1 (Resumen ejecutivo mensual) y Consulta 2 (Ranking de productos). Identifica los 3 hallazgos comerciales más importantes, calculando variaciones porcentuales y participación sobre el total.
 
 ### 2. Datos y resultados completos de las consultas
 
